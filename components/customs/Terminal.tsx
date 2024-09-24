@@ -9,7 +9,7 @@ import Terminal, {
   TerminalOutput,
 } from 'react-terminal-ui'
 
-import NavbarOfTerminal from './NavBarOfTerminal'
+import NavbarOfTerminal from './NavbarOfTerminal'
 
 export default function TerminalCore() {
   const [terminalLineData, setTerminalLineData] = React.useState([
