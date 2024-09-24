@@ -13,9 +13,9 @@ import NavbarOfTerminal from './NavbarOfTerminal'
 
 export default function TerminalCore() {
   const [terminalLineData, setTerminalLineData] = React.useState([
-    <TerminalOutput>Welcome to my terminal</TerminalOutput>,
-    <TerminalOutput>Type 'help' to list all available commands</TerminalOutput>,
-  ])
+  <TerminalOutput>Welcome to my terminal</TerminalOutput>,
+  <TerminalOutput>Type &apos;help&apos; to list all available commands</TerminalOutput>,
+]);
   const { setIsOpen: setOpen, currentStep } = useTour()
 
   useEffect(() => {
@@ -68,7 +68,7 @@ export default function TerminalCore() {
       default:
         newTerminalLineData.push(
           <TerminalOutput>
-            Command not found. Type 'help' to list all available commands.
+            Command not found. Type &apos;help&apos; to list all available commands.
           </TerminalOutput>
         )
         break
