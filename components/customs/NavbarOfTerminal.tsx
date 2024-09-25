@@ -17,12 +17,12 @@ const NavbarOfTerminal = () => {
             </div>
           </div>
         </DialogTrigger>
-        <DialogContent className='max-w-[800px] h-[800px]'>
-          <CodeBlock
-            code={`${codeTerminalString}`}
-            language='javascript'
-            showLineNumbers
-          />
+        <DialogContent className='max-w-[1000px] h-[800px]'>
+          <iframe
+            src='https://github1s.com/mohwildan/terminal/blob/HEAD/components/customs/Terminal.tsx'
+            title='VsCode'
+            className='h-full w-full bg-ub-cool-grey'
+          ></iframe>
         </DialogContent>
       </Dialog>
     </div>
